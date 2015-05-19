@@ -15,10 +15,10 @@
 <div class="header high">
     <h1>Code coverage report for <span class="entity">app/modules/header/header.directive.spec.js</span></h1>
     <h2>
-        Statements: <span class="metric">100% <small>(26 / 26)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">100% <small>(3 / 3)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Functions: <span class="metric">100% <small>(7 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Lines: <span class="metric">100% <small>(26 / 26)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(2 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(3 / 3)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">app/modules/header/</a> &#187; header.directive.spec.js</div>
@@ -35,86 +35,14 @@
 8
 9
 10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+11</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
@@ -123,44 +51,8 @@ describe('Header', function () {
 &nbsp;
 	// If testing a directive, you need to include the templates module to get your html partial
 	beforeEach(module('AngularModuleTestExamples.header'));
-	var location;
-	beforeEach(module(function ($provide) {
-		$provide.provider('ImageOrganizer', {
-			$get: angular.noop
-		});
-		location = {
-			url: angular.noop
-		};
-		$provide.provider('$location', {
-			$get: function() {
-				return location;
-			}
-		});
-	}));
 &nbsp;
 	describe('header directive', function () {
-		var $compile, $scope;
-		beforeEach(inject(function (_$compile_, _$rootScope_) {
-			$compile = _$compile_;
-			$scope = _$rootScope_;
-		}));
-&nbsp;
-		it('should make correct element structure', function () {
-			var el = $compile('&lt;em-header&gt;&lt;/em-header&gt;')($scope);
-			$scope.$digest(); // Trigger the GET to get the template
-			expect(el.find('p').text()).toBe('Angular Module Test Examples');
-		});
-&nbsp;
-		it('should navigate to given url', function () {
-			spyOn(location, 'url');
-			var el = $compile('&lt;em-header&gt;&lt;/em-header&gt;')($scope);
-			$scope.$digest(); // Trigger the GET to get the template
-			var localScope = el.scope();
-			localScope.navigateTo('url');
-			expect(location.url).toHaveBeenCalledWith('/url');
-			localScope.navigateTo();
-			expect(location.url).toHaveBeenCalledWith('/');
-		});
 	});
 });
 &nbsp;</pre></td></tr>
@@ -168,7 +60,7 @@ describe('Header', function () {
 
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 19 2015 10:17:13 GMT-0600 (MDT)</div>
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 19 2015 10:27:44 GMT-0600 (MDT)</div>
 </div>
 <script src="../../../prettify.js"></script>
 <script>

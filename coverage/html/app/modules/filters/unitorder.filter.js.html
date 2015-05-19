@@ -12,13 +12,13 @@
     </style>
 </head>
 <body>
-<div class="header high">
+<div class="header low">
     <h1>Code coverage report for <span class="entity">app/modules/filters/unitorder.filter.js</span></h1>
     <h2>
-        Statements: <span class="metric">100% <small>(14 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Branches: <span class="metric">100% <small>(16 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Functions: <span class="metric">100% <small>(4 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Lines: <span class="metric">100% <small>(13 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">7.14% <small>(1 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">7.69% <small>(1 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">app/modules/filters/</a> &#187; unitorder.filter.js</div>
@@ -47,47 +47,47 @@
 20</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3</span>
-<span class="cline-any cline-yes">5</span>
-<span class="cline-any cline-yes">5</span>
-<span class="cline-any cline-yes">5</span>
-<span class="cline-any cline-yes">15</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5</span>
-<span class="cline-any cline-yes">12</span>
-<span class="cline-any cline-yes">6</span>
-<span class="cline-any cline-yes">6</span>
-<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5</span>
-<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 angular.module('AngularModuleTestExamples.filters')
-.filter('unitorder', function () {
-	return function(items, reverse) {
-		var filtered = [];
-		var field = 'unit';
-		angular.forEach(items, function(item) {
-			filtered.push(item);
+.filter('unitorder', <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >	return <span class="fstat-no" title="function not covered" >function(items, reverse) {</span></span>
+<span class="cstat-no" title="statement not covered" >		var filtered = [];</span>
+<span class="cstat-no" title="statement not covered" >		var field = 'unit';</span>
+<span class="cstat-no" title="statement not covered" >		angular.forEach(items, <span class="fstat-no" title="function not covered" >function(item) {</span></span>
+<span class="cstat-no" title="statement not covered" >			filtered.push(item);</span>
 		});
-		filtered.sort(function (a, b) {
-			if(a.currentPosition[field]!= null&amp;&amp;b.currentPosition[field]!= null&amp;&amp;!isNaN(parseInt(a.currentPosition[field].value))&amp;&amp;!isNaN(parseInt(b.currentPosition[field].value)))
-			return (parseInt(a.currentPosition[field].value) &gt; parseInt(b.currentPosition[field].value) ? 1 : -1);
-			else if(a.currentPosition[field]!= null&amp;&amp;b.currentPosition[field]!= null)
-			return (a.currentPosition[field].value &gt; b.currentPosition[field].value ? 1 : -1);
+<span class="cstat-no" title="statement not covered" >		filtered.sort(<span class="fstat-no" title="function not covered" >function (a, b) {</span></span>
+<span class="cstat-no" title="statement not covered" >			if(a.currentPosition[field]!= null&amp;&amp;b.currentPosition[field]!= null&amp;&amp;!isNaN(parseInt(a.currentPosition[field].value))&amp;&amp;!isNaN(parseInt(b.currentPosition[field].value)))</span>
+<span class="cstat-no" title="statement not covered" >			return (parseInt(a.currentPosition[field].value) &gt; parseInt(b.currentPosition[field].value) ? 1 : -1);</span>
+			else <span class="cstat-no" title="statement not covered" >if(a.currentPosition[field]!= null&amp;&amp;b.currentPosition[field]!= null)</span>
+<span class="cstat-no" title="statement not covered" >			return (a.currentPosition[field].value &gt; b.currentPosition[field].value ? 1 : -1);</span>
 		});
 &nbsp;
-		if(reverse) {filtered.reverse();}
-		return filtered;
+<span class="cstat-no" title="statement not covered" >		if(reverse) {<span class="cstat-no" title="statement not covered" >filtered.reverse();}</span></span>
+<span class="cstat-no" title="statement not covered" >		return filtered;</span>
 	};
 });</pre></td></tr>
 </table></pre>
 
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 19 2015 10:17:10 GMT-0600 (MDT)</div>
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 19 2015 10:27:42 GMT-0600 (MDT)</div>
 </div>
 <script src="../../../prettify.js"></script>
 <script>

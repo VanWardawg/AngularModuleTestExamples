@@ -12,13 +12,13 @@
     </style>
 </head>
 <body>
-<div class="header high">
+<div class="header low">
     <h1>Code coverage report for <span class="entity">app/modules/controllers/other.controller.js</span></h1>
     <h2>
-        Statements: <span class="metric">100% <small>(12 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Branches: <span class="metric">100% <small>(8 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Functions: <span class="metric">100% <small>(4 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Lines: <span class="metric">100% <small>(12 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">8.33% <small>(1 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">8.33% <small>(1 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">app/modules/controllers/</a> &#187; other.controller.js</div>
@@ -52,49 +52,49 @@
 25</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">4</span>
-<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 angular.module('AngularModuleTestExamples.controllers')
-.controller('OtherCtrl', ['$scope', function ($scope) {
-	var hiddenVariable = false;
-	$scope.ThisFunctionIsComplex = function () {
-		if(hiddenVariable) {
-			thisFunction();
+.controller('OtherCtrl', ['$scope', <span class="fstat-no" title="function not covered" >function ($scope) {</span>
+<span class="cstat-no" title="statement not covered" >	var hiddenVariable = false;</span>
+<span class="cstat-no" title="statement not covered" >	$scope.ThisFunctionIsComplex = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >		if(hiddenVariable) {</span>
+<span class="cstat-no" title="statement not covered" >			thisFunction();</span>
 		}
 		else {
-			if(!hiddenVariable &amp;&amp; $scope.isTrue) {
-				console.log('here');
+<span class="cstat-no" title="statement not covered" >			if(!hiddenVariable &amp;&amp; $scope.isTrue) {</span>
+<span class="cstat-no" title="statement not covered" >				console.log('here');</span>
 			}
 		}
 	};
 &nbsp;
-	$scope.toggleHiddenVariable = function () {
-		hiddenVariable = !hiddenVariable;
+<span class="cstat-no" title="statement not covered" >	$scope.toggleHiddenVariable = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >		hiddenVariable = !hiddenVariable;</span>
 	};
 &nbsp;
-	var thisFunction = function() {
-		if($scope.isTrue) {
-			console.log('here');
+<span class="cstat-no" title="statement not covered" >	var thisFunction = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >		if($scope.isTrue) {</span>
+<span class="cstat-no" title="statement not covered" >			console.log('here');</span>
 		}
 	};
 }]);</pre></td></tr>
@@ -102,7 +102,7 @@ angular.module('AngularModuleTestExamples.controllers')
 
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 19 2015 10:17:10 GMT-0600 (MDT)</div>
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 19 2015 10:27:42 GMT-0600 (MDT)</div>
 </div>
 <script src="../../../prettify.js"></script>
 <script>
