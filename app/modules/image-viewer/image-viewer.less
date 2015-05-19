@@ -1,0 +1,45 @@
+image-viewer {
+	position:absolute;
+	z-index:100;
+	top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+
+    .ion-chevron-left {
+    	font-size: 80px;
+    	opacity: .7;
+    	color: silver;
+    	position:absolute;
+		z-index:1000;
+		height: 100px;
+		top: 50%;  /* position the top  edge of the element at the middle of the parent */
+	    left: 0%; /* position the left edge of the element at the middle of the parent */
+    	transform: translate(-110%, -50%);
+    }
+    .ion-chevron-right {
+    	font-size: 80px;
+    	opacity: .7;
+    	color: silver;
+    	position:absolute;
+		z-index:1000;
+		height: 100px;
+		top: 50%;  /* position the top  edge of the element at the middle of the parent */
+	    left: 101%; /* position the left edge of the element at the middle of the parent */
+    	transform: translate(0%, -50%);
+    }
+	.large-image {
+		max-width:900px;
+		max-height: 550px;
+	}
+
+	.medium-image {
+		max-width: 600px;
+		max-height: 400px;
+	}
+
+	.small-image {
+		max-width: 300px;
+		max-height: 400px;
+	}
+}

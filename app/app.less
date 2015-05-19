@@ -1,0 +1,72 @@
+@gallery-underline: #B39DDB; //deep purple 200
+@services-underline: #BBDEFB; //blue 100
+@contact-underline: #FFF59D; //yellow 200
+@contact-box: #FFF9C4;
+@main-color: #90CAF9; //blue 200
+.clickable {
+	cursor: pointer;
+}
+
+.pink {
+	background-color: @gallery-underline;
+}
+
+.yellow {
+	background-color: @contact-box;
+}
+
+.blue {
+	background-color: @services-underline;
+}
+
+.green {
+	background-color: @main-color;
+}
+
+
+.image {
+	width:100%;
+	height:100%;
+}
+
+.main-content {
+	width: 100%;
+}
+
+.main-margin {
+	margin-top:100px;
+}
+
+.main-container-lg-padding {
+	padding: 0 50px;
+	min-height: 100%;
+}
+
+.gallery-content {
+	margin-top: 120px;
+}
+
+.clearfix:before {
+	display: table;
+  	content: " ";
+  	box-sizing: border-box;
+}
+
+.clearfix:after //append as many as you like
+{
+	clear:both;
+	box-sizing: border-box;
+	display: table;
+	content: " ";
+}
+
+.overlay {
+	width:100%;
+	height:100%;
+	background-color: black;
+	opacity: .5;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:10;
+}

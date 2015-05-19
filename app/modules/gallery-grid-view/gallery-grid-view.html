@@ -1,0 +1,13 @@
+<md-grid-list
+			md-cols-sm="5" md-cols-md="7" md-cols-gt-md="9"
+	        md-row-height-gt-md="1:1" md-row-height="1:1"
+	        md-gutter="8px" md-gutter-gt-sm="4px" >
+	<md-grid-tile ng-repeat="image in ImageOrganizer.galleryImages"
+				md-rowspan="{{image.span.row}}"
+				md-colspan="{{image.span.col}}"
+				ng-class="image.background" >
+		<!-- <div back-img="{{item.src}}" class="image" ></div> -->
+		<img ng-if="image.src" ng-src="{{image.src}}" class="image clickable" ng-click="showAdvanced($event, image)">
+		<div ng-if="!image.src" ng-class="image.box" class="box"></div>
+	</md-grid-tile>
+</md-grid-list>

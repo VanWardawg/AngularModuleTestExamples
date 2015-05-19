@@ -1,0 +1,1 @@
+angular.module('AngularModuleTestExamples.gallery-grid-view', ['AngularModuleTestExamples.templates', 'AngularModuleTestExamples.image-organizer']);

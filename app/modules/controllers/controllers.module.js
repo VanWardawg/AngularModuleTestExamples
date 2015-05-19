@@ -1,0 +1,1 @@
+angular.module('AngularModuleTestExamples.controllers', ['AngularModuleTestExamples.image-organizer']);
